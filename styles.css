@@ -1,3 +1,68 @@
-h1 {
-    color: green;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Satisfy&family=Work+Sans:wght@800&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1B1F22;
+    color: white;
+}
+
+.header {
+    min-height: 100px;
+}
+
+.nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 35px;
+}
+
+.nav__logo {
+    width: 50%;
+}
+
+.nav__name { 
+    color: tomato;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.nav__links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: flex;
+    gap: 50px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover{
+    color: tomato;
+    text-shadow: 4px 3px 3px black;
+}
+
+
+/* h1 {
+    color: #b91e1e;
+} */
