@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Satisfy&family=Work+Sans:wght@800&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
@@ -16,24 +17,34 @@ html {
 body {
     background-color: #1B1F22;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
     min-height: 100px;
+    width: 100%;
 }
 
 .nav {
+    background-color: #1B1F22;
     height: 100px;
     display: flex;
     align-items: center;
     box-shadow: rgb(0 0 0 / 50%) 0px 0px 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el elemento ocupe todo el ancho de la ventana */
+    z-index: 100;
 }
 
 .nav__logo {
     width: 50%;
 }
 
-.nav__name { 
+.nav__name {
     color: tomato;
     width: 50%;
     display: flex;
@@ -50,19 +61,37 @@ body {
     gap: 50px;
 }
 
-.nav__link{
+.nav__link {
+    position: relative;
     text-decoration: none;
     color: white;
     font-size: 20px;
-    transition: color 0.3s ease;
 }
 
-.nav__link:hover{
+.nav__link::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(207, 160, 151);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav__link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav__link:hover {
     color: tomato;
     text-shadow: 4px 3px 3px black;
 }
 
-
-/* h1 {
-    color: #b91e1e;
-} */
+.section__inicio {
+    width: 65%;
+    height: 100vh;
+    border-bottom: 1px solid rgb(52 47 46);
+}
