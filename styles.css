@@ -7,7 +7,9 @@
     padding: 0px;
 }
 
-
+::selection {
+    background-color: #384f63;
+}
 
 
 html {
@@ -23,25 +25,26 @@ body {
 }
 
 .header {
-    min-height: 100px;
+    height: 10vh;
     width: 100%;
 }
 
 .nav {
     background-color: #1B1F22;
-    height: 100px;
+    height: 10vh;
     display: flex;
     align-items: center;
-    box-shadow: rgb(0 0 0 / 50%) 0px 0px 35px;
+    box-shadow: rgb(0 0 0 / 57%) 0px 0px 35px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Asegura que el elemento ocupe todo el ancho de la ventana */
+    width: 100%;
     z-index: 100;
 }
 
 .nav__logo {
     width: 50%;
+    text-decoration: none;
 }
 
 .nav__name {
@@ -49,16 +52,17 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .nav__links {
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     color: white;
     display: flex;
-    gap: 50px;
+    gap: 5%;
+    list-style: none;
 }
 
 .nav__link {
@@ -75,11 +79,12 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: rgb(207, 160, 151);
+    background-color: tomato;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.75s ease;
 }
+
 
 .nav__link:hover::before {
     transform: scaleX(1);
@@ -90,8 +95,127 @@ body {
     text-shadow: 4px 3px 3px black;
 }
 
-.section__inicio {
+.section {
     width: 65%;
     height: 100vh;
     border-bottom: 1px solid rgb(52 47 46);
+}
+
+.section--short {
+    height: 90vh;
+    display: flex;
+}
+
+.picture {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture__container {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid rgb(54, 54, 54);
+    background-image: url('/assets/1650231572382.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.greeting {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.greeting__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.greeting__title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.greeting__subtitle {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.greeting__text {
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.greeting__name {
+    color: tomato;
+}
+
+.greeting__interactions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+a.greeting__link {
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: #000;
+}
+
+
+.greeting__icons {
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 1px;
+    color: white;
+    transition: color 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.greeting__icons:hover {
+    color: tomato;
+}
+
+a.greeting__buttonDownloadCv {
+    text-decoration: none;
+}
+
+.greeting__buttonDownloadCv {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    z-index: 10;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.greeting__buttonDownloadCv::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #c54a34;
+    z-index: -1;
+    transition: width 0.75s;
+}
+
+.greeting__buttonDownloadCv:hover::after {
+    width: 100%;
 }

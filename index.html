@@ -4,14 +4,18 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Bra-portafolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Satisfy&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Satisfy&family=Work+Sans:wght@400;600;800&display=swap"
+        rel="stylesheet">
     <!-- Styles -->
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <!-- JS -->
@@ -19,24 +23,55 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <nav class="nav">
-            <div class="nav__logo">
-                <span class="nav__name">BR</span>
-            </div>
-            <div class="nav__links">
-                <a href="" class="nav__link">INICIO</a>
-                <a href="" class="nav__link">EXPERIENCIA</a>
-                <a href="" class="nav__link">HABILIDADES</a>
-                <a href="" class="nav__link">PORTAFOLIO</a>
-                <a href="" class="nav__link">CONTACTO</a>
-            </div>
+            <a href="#home" class="nav__logo">
+                <span class="nav__name">< / Bra-dev ></span>
+            </a>
+            <ul class="nav__links">
+                <li><a href="#home" class="nav__link">INICIO</a></li>
+                <li><a href="#experience" class="nav__link">EXPERIENCIA</a></li>
+                <li><a href="#skills" class="nav__link">HABILIDADES</a></li>
+                <li><a href="#portfolio" class="nav__link">PORTAFOLIO</a></li>
+                <li><a href="#contact" class="nav__link">CONTACTO</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="section__inicio"></section>
-    <section class="section__inicio"></section>
-    <section class="section__inicio"></section>
-    <section class="section__inicio"></section>
+    <section class="section section--short">
+        <div class="picture">
+            <div class="picture__container"></div>
+        </div>
+        <div class="greeting">
+            <div class="greeting__container">
+                <h1 class="greeting__title">Hola! Soy <span class="greeting__name">Braian Rosales.</span></h1>
+                <h3 class="greeting__subtitle">Desarrollador Front end.</h3>
+                <p class="greeting__text">
+                    Bienvenid@ a mi portafolio como desarrollador Front end en Angular! Estoy encantado de tener la
+                    oportunidad de presentarte mis proyectos y habilidades en el mundo del
+                    desarrollo web.
+                </p>
+                <p class="greeting__text">
+                    En cada proyecto en el que me involucro, mi objetivo es mantenerme actualizado, superar mis límites
+                    y adoptar las
+                    mejores prácticas en el desarrollo de software. Mi enfoque es siempre encontrar soluciones
+                    innovadoras y eficientes para los problemas que enfrentamos en el desarrollo web.
+                </p>
+                <div class="greeting__interactions">
+                    <a class="greeting__link" href="https://github.com/BraianRosales" target="_blank">
+                        <i class="fa-brands fa-github greeting__icons"></i>
+                    </a>
+                    <a class="greeting__link" href="https://www.linkedin.com/in/braian-rosalesit/" target="_blank">
+                        <i class="fa-brands fa-linkedin greeting__icons"></i>
+                    </a>
+                    <a class="greeting__buttonDownloadCv" href="assets/CV-BraianRosales.pdf" download>Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="section"></section>
+    <section id="skills" class="section"></section>
+    <section id="portfolio" class="section"></section>
+    <section id="contact" class="section"></section>
 </body>
 
 
