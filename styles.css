@@ -98,10 +98,10 @@ body {
 .section {
     width: 65%;
     height: 100vh;
-    border-bottom: 1px solid rgb(52 47 46);
+    /* border-bottom: 1px solid rgb(52 47 46); */
 }
 
-.section--short {
+.section--inicio {
     height: 90vh;
     display: flex;
 }
@@ -151,11 +151,11 @@ body {
 
 .greeting__text {
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .greeting__name {
-    color: tomato;
+    color: #ff836d;
 }
 
 .greeting__interactions {
@@ -178,7 +178,6 @@ a.greeting__link {
     cursor: pointer;
     margin-top: 1px;
     color: white;
-    transition: color 0.5s;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -213,9 +212,85 @@ a.greeting__buttonDownloadCv {
     height: 100%;
     background-color: #c54a34;
     z-index: -1;
-    transition: width 0.75s;
+    transition: width 0.50s;
 }
 
 .greeting__buttonDownloadCv:hover::after {
     width: 100%;
+}
+
+.section--experience,
+.section--skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.experience__container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+    border-left: 1px solid #ff836d;
+}
+
+
+.article {
+    position: relative;
+}
+
+.article__mark {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ff836d;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+}
+
+.article__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px 0px 0px 15px;
+}
+
+.article__date {
+    opacity: 0.5;
+}
+
+.article__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff836d;
+}
+
+.article__textList {
+    list-style: none;
+}
+
+.article__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.skills__container {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    gap: 40px;
+    border: 1px solid red;
+}
+
+.skills__iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

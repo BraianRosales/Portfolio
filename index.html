@@ -2,59 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Bra-portafolio</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>bra-portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Righteous&family=Satisfy&family=Work+Sans:wght@400;600;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- Styles -->
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <!-- JS -->
-    <script src='main.js'></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <header id="home" class="header">
+    <header id="inicio" class="header">
         <nav class="nav">
-            <a href="#home" class="nav__logo">
-                <span class="nav__name">< / Bra-dev ></span>
+            <a href="#inicio" class="nav__logo">
+                <span class="nav__name">
+                    < / Bra-dev>
+                </span>
             </a>
             <ul class="nav__links">
-                <li><a href="#home" class="nav__link">INICIO</a></li>
-                <li><a href="#experience" class="nav__link">EXPERIENCIA</a></li>
-                <li><a href="#skills" class="nav__link">HABILIDADES</a></li>
-                <li><a href="#portfolio" class="nav__link">PORTAFOLIO</a></li>
-                <li><a href="#contact" class="nav__link">CONTACTO</a></li>
+                <li><a href="#inicio" class="nav__link">INICIO</a></li>
+                <li><a href="#experiencia" class="nav__link">EXPERIENCIA</a></li>
+                <li><a href="#habilidades" class="nav__link">HABILIDADES</a></li>
+                <li><a href="#portafolio" class="nav__link">PORTAFOLIO</a></li>
+                <li><a href="#contacto" class="nav__link">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
-    <section class="section section--short">
+
+    <section class="section section--inicio">
         <div class="picture">
             <div class="picture__container"></div>
         </div>
         <div class="greeting">
             <div class="greeting__container">
-                <h1 class="greeting__title">Hola! Soy <span class="greeting__name">Braian Rosales.</span></h1>
+                <h1 class="greeting__title">
+                    Hola! Soy <span class="greeting__name">Braian Rosales.</span>
+                </h1>
                 <h3 class="greeting__subtitle">Desarrollador Front end.</h3>
                 <p class="greeting__text">
-                    Bienvenid@ a mi portafolio como desarrollador Front end en Angular! Estoy encantado de tener la
-                    oportunidad de presentarte mis proyectos y habilidades en el mundo del
-                    desarrollo web.
+                    Bienvenid@ a mi portafolio como desarrollador Front end. Estoy
+                    encantado de tener la oportunidad de presentarte mis proyectos y
+                    habilidades haciendo aplicaciones Web.
                 </p>
                 <p class="greeting__text">
-                    En cada proyecto en el que me involucro, mi objetivo es mantenerme actualizado, superar mis límites
-                    y adoptar las
-                    mejores prácticas en el desarrollo de software. Mi enfoque es siempre encontrar soluciones
-                    innovadoras y eficientes para los problemas que enfrentamos en el desarrollo web.
+                    En cada proyecto en el que me involucro, mi objetivo es mantenerme
+                    actualizado, superar mis límites y adoptar las mejores prácticas en
+                    el desarrollo de software. Mi enfoque es siempre encontrar
+                    soluciones innovadoras y eficientes.
                 </p>
                 <div class="greeting__interactions">
                     <a class="greeting__link" href="https://github.com/BraianRosales" target="_blank">
@@ -68,12 +73,218 @@
             </div>
         </div>
     </section>
-    <section id="experience" class="section"></section>
-    <section id="skills" class="section"></section>
-    <section id="portfolio" class="section"></section>
-    <section id="contact" class="section"></section>
+    <section id="experiencia" class="section section--experience">
+        <main class="experience__container">
+            <article class="article">
+                <div class="article__mark"></div>
+                <div class="article__info">
+                    <span class="article__date">Octubre 2022 - Presente</span>
+                    <span class="article__title">Desarrollador Front end en Accusys Technology</span>
+                    <div class="article__text">
+                        <p>
+                            Formo parte del equipo encargado de desarrollar y mantener
+                            interfaces de usuarios en la consultora con Angular como tecnología principal.
+                        </p>
+                        <ul class="article__textList">
+                            <span>Mis responsabilidades son:</span>
+                            <li>
+                                - Desarrollar modulos, componentes y funcionalidades
+                                propuestas por el equipo de UX UI.
+                            </li>
+                            <li>
+                                - Aportar ideas y visión desde el front sobre soluciones en
+                                conjunto con el equipo.
+                            </li>
+                            <li>
+                                - Mantener y crear componentes dinamicos reutilizables en toda
+                                la app.
+                            </li>
+                            <li>
+                                - Manejo del estado global de la aplicación siguiendo buenas
+                                prácticas de RxJs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="article">
+                <div class="article__mark"></div>
+                <div class="article__info">
+                    <span class="article__date"> Mayo 2022 - Octubre 2022 </span>
+                    <span class="article__title">Desarrollador Front end en COTO</span>
+                    <div class="article__text">
+                        <p>
+                            Desarrollo con Angular de nuevos modulos, componentes, features, fix de bugs
+                            y refactor de aplicaciones en producción.
+                        </p>
+                        <ul class="article__textList">
+                            <div>Estuve en proyectos como:</div>
+                            <li>- Coto digital (Desarrollo en aplicaciónes de envio a domicilio).</li>
+                            <li>- SIGE/CD (Aplicación del Centro distribución de mercadería).</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </section>
+    <section id="habilidades" class="section section--skills">
+        <main class="skills__container">
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="tomato" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+                <p>Html 5</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+                <p>CSS3</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-sass" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path
+                        d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" />
+                </svg>
+                <p>SASS</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M7.5 8h3v8l-2 -1" />
+                    <path
+                        d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+                <p>Javascript</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-typescript" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M15 17.5c.32 .32 .754 .5 1.207 .5h.543c.69 0 1.25 -.56 1.25 -1.25v-.25a1.5 1.5 0 0 0 -1.5 -1.5a1.5 1.5 0 0 1 -1.5 -1.5v-.25c0 -.69 .56 -1.25 1.25 -1.25h.543c.453 0 .887 .18 1.207 .5" />
+                    <path d="M9 12h4" />
+                    <path d="M11 12v6" />
+                    <path d="M21 19v-14a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2z" />
+                </svg>
+                <p>Typescript</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-angular" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M5.428 17.245l6.076 3.471a1 1 0 0 0 .992 0l6.076 -3.471a1 1 0 0 0 .495 -.734l1.323 -9.704a1 1 0 0 0 -.658 -1.078l-7.4 -2.612a1 1 0 0 0 -.665 0l-7.399 2.613a1 1 0 0 0 -.658 1.078l1.323 9.704a1 1 0 0 0 .495 .734z" />
+                    <path d="M9 15l3 -8l3 8" />
+                    <path d="M10 13h4" />
+                </svg>
+                <p>Angular</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-redux" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M16.54 7c-.805 -2.365 -2.536 -4 -4.54 -4c-2.774 0 -5.023 2.632 -5.023 6.496c0 1.956 1.582 4.727 2.512 6" />
+                    <path
+                        d="M4.711 11.979c-1.656 1.877 -2.214 4.185 -1.211 5.911c1.387 2.39 5.138 2.831 8.501 .9c1.703 -.979 2.875 -3.362 3.516 -4.798" />
+                    <path
+                        d="M15.014 19.99c2.511 0 4.523 -.438 5.487 -2.1c1.387 -2.39 -.215 -5.893 -3.579 -7.824c-1.702 -.979 -4.357 -1.235 -5.927 -1.07" />
+                    <path
+                        d="M10.493 9.862c.48 .276 1.095 .112 1.372 -.366a1 1 0 0 0 -.367 -1.365a1.007 1.007 0 0 0 -1.373 .366a1 1 0 0 0 .368 1.365z" />
+                    <path d="M9.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M15.5 14m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                </svg>
+                <p>NgRx (Redux)</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-angular" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M5.428 17.245l6.076 3.471a1 1 0 0 0 .992 0l6.076 -3.471a1 1 0 0 0 .495 -.734l1.323 -9.704a1 1 0 0 0 -.658 -1.078l-7.4 -2.612a1 1 0 0 0 -.665 0l-7.399 2.613a1 1 0 0 0 -.658 1.078l1.323 9.704a1 1 0 0 0 .495 .734z" />
+                    <path d="M9 15l3 -8l3 8" />
+                    <path d="M10 13h4" />
+                </svg>
+                <p>Angular Material</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-react" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M6.306 8.711c-2.602 .723 -4.306 1.926 -4.306 3.289c0 2.21 4.477 4 10 4c.773 0 1.526 -.035 2.248 -.102" />
+                    <path
+                        d="M17.692 15.289c2.603 -.722 4.308 -1.926 4.308 -3.289c0 -2.21 -4.477 -4 -10 -4c-.773 0 -1.526 .035 -2.25 .102" />
+                    <path
+                        d="M6.305 15.287c-.676 2.615 -.485 4.693 .695 5.373c1.913 1.105 5.703 -1.877 8.464 -6.66c.387 -.67 .733 -1.339 1.036 -2" />
+                    <path
+                        d="M17.694 8.716c.677 -2.616 .487 -4.696 -.694 -5.376c-1.913 -1.105 -5.703 1.877 -8.464 6.66c-.387 .67 -.733 1.34 -1.037 2" />
+                    <path
+                        d="M12 5.424c-1.925 -1.892 -3.82 -2.766 -5 -2.084c-1.913 1.104 -1.226 5.877 1.536 10.66c.386 .67 .793 1.304 1.212 1.896" />
+                    <path
+                        d="M12 18.574c1.926 1.893 3.821 2.768 5 2.086c1.913 -1.104 1.226 -5.877 -1.536 -10.66c-.375 -.65 -.78 -1.283 -1.212 -1.897" />
+                    <path d="M11.5 12.866a1 1 0 1 0 1 -1.732a1 1 0 0 0 -1 1.732z" />
+                </svg>
+                <p>ReactJs</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-git" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 15v-6" />
+                    <path d="M15 11l-2 -2" />
+                    <path d="M11 7l-1.9 -1.9" />
+                    <path
+                        d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
+                </svg>
+                <p>GIT</p>
+            </div>
+            <div class="skills__iconContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                    <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                </svg>
+                <p>Scrum</p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </main>
+    </section>
+    <section id="portafolio" class="section"></section>
+    <section id="contacto" class="section"></section>
 </body>
-
-
 
 </html>
