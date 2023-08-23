@@ -8,7 +8,7 @@
 }
 
 ::selection {
-    background-color: #14191c;
+    background-color: rgb(36, 78, 73);
 }
 
 
@@ -43,47 +43,49 @@ body {
 }
 
 .nav__logo {
-    width: 50%;
+    width: 30%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__logo a {
     text-decoration: none;
 }
 
 .nav__name {
     color: turquoise;
-    width: 50%;
-    display: flex;
-    justify-content: center;
     font-size: 45px;
     font-family: 'Nanum Brush Script', cursive;
-
-
 }
 
 .nav__links {
-    width: 45%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
     display: flex;
     gap: 5%;
     list-style: none;
+    padding-right: 50px;
 }
 
 .nav__link {
     position: relative;
     text-decoration: none;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
     transition: 0.5s;
 }
 
-/* .nav__link::before {
+.nav__link::before {
     content: "";
     position: absolute;
     bottom: -3px;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: tomato;
+    background-color: turquoise;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.75s ease;
@@ -92,9 +94,14 @@ body {
 
 .nav__link:hover::before {
     transform: scaleX(1);
-} */
+}
 
 .nav__link:hover {
+    color: turquoise;
+    text-shadow: 4px 3px 3px black;
+}
+
+.nav__link-active {
     color: turquoise;
     text-shadow: 4px 3px 3px black;
 }
@@ -155,7 +162,7 @@ body {
 
 .greeting__text {
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .greeting__name {
@@ -170,14 +177,16 @@ body {
     margin-top: 10px;
 }
 
-a.greeting__link {
+a.greeting__link,
+a.card__linkGithub {
     text-decoration: none;
     /* Elimina el subrayado */
     color: #000;
 }
 
 
-.greeting__icons {
+.greeting__icons,
+.card__iconGithub {
     font-size: 30px;
     cursor: pointer;
     margin-top: 1px;
@@ -223,7 +232,9 @@ a.greeting__buttonDownloadCv {
     width: 100%;
 }
 
-.section--experience, .section--skills {
+.section--experience,
+.section--skills,
+.section--proyects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +296,7 @@ a.greeting__buttonDownloadCv {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .skills__container {
@@ -307,8 +318,8 @@ a.greeting__buttonDownloadCv {
     background-color: transparent;
     border-radius: 8px;
     padding: 15px;
-    width: 30%;
-    box-shadow: 0px 1px 5px 1px black
+    width: 32%;
+    box-shadow: 0px 0px 1px 1px black
 }
 
 
@@ -319,6 +330,82 @@ a.greeting__buttonDownloadCv {
 }
 
 .skills__iconTitle {
-    font-size: 18px;
-    font-weight: 600; 
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* -------------------------------------------- Proyectos --------------------------------------------*/
+
+.proyects__container {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17px;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.proyects__card {
+    width: 31%; 
+    height: 500px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid black;
+    /* box-shadow: 0px 0px 2px 1px bla; */
+}
+
+.card__image {
+    width: 100%;
+    height: 50%;
+}
+
+.card_titleAndIcon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    align-items: center
+}
+
+.card__title {
+    font-size: 16px;
+    color: darkturquoise
+}
+
+.card__iconGithub {
+    font-size: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card__iconGithub:hover {
+    color: turquoise;
+}
+
+.card__article {
+    font-size: 14px;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.card__abilities ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    column-gap: 5px;
+    list-style: none;
+    row-gap: 5px;
+    padding: 5px 5px 0px 10px;
+    /* color: darkturquoise; */
+}
+
+.card_subtitle {
+    font-size: 16px;
+    color: darkturquoise;
+    padding-left: 10px;
 }
