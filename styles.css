@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: #1B1F22;
+    background-color: #1F2936;
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ body {
 }
 
 .nav {
-    background-color: #1B1F22;
+    background-color: #1F2936;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ body {
 .section {
     width: 65%;
     height: 100vh;
-    /* border-bottom: 1px solid rgb(52 47 46); */
+    /* border-bottom: 1px solid rgb(72, 97, 95); */
 }
 
 .section--inicio {
@@ -166,7 +166,25 @@ body {
 }
 
 .greeting__name {
-    color: teal;
+    color: turquoise;
+    border-right: 3px solid;
+    padding-right: 3px;
+    animation: teclear 2s steps(16), efecto .5s step-end infinite alternate;
+}
+
+@keyframes teclear {
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes efecto {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .greeting__interactions {
@@ -196,7 +214,7 @@ a.card__linkGithub {
 }
 
 .greeting__icons:hover {
-    color: teal;
+    color: turquoise;
 }
 
 a.greeting__buttonDownloadCv {
@@ -214,19 +232,25 @@ a.greeting__buttonDownloadCv {
     z-index: 10;
     overflow: hidden;
     font-size: 16px;
+    transition: 0.50s;
 }
 
-.greeting__buttonDownloadCv::after {
+.greeting__buttonDownloadCv:hover {
+    color: turquoise;
+}
+
+/* .greeting__buttonDownloadCv::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background-color: teal;
+    background-color: rgb(56, 205, 190);
+    color: black;
     z-index: -1;
     transition: width 0.50s;
-}
+} */
 
 .greeting__buttonDownloadCv:hover::after {
     width: 100%;
@@ -279,7 +303,7 @@ a.greeting__buttonDownloadCv {
 .article__title {
     font-size: 20px;
     font-weight: 600;
-    color: teal;
+    color: turquoise;
 }
 
 .article__textList {
