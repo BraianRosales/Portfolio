@@ -257,8 +257,9 @@
                 <img class="card__image" src="assets/fondoCard.jpg" alt="" />
                 <div class="card_titleAndIcon">
                     <span class="card__title">Nombre del Proyecto</span>
-                    <a class="card__linkGithub" href="https://github.com/BraianRosales" target="_blank"
-                        alt="gitHub.img">
+                    <a class="card__linkGithub card__linkGithub--button" href="https://github.com/BraianRosales"
+                        target="_blank" alt="gitHub.img">
+                        <p class="card__buttonText">Código</p>
                         <i class="fa-brands fa-github card__iconGithub"></i>
                     </a>
                 </div>
@@ -303,7 +304,32 @@
             </div>
         </main>
     </section>
-    <section id="contacto" class="section"></section>
+    <section id="contacto" class="section section--contact">
+        <main class="contact__container">
+            <h2>Trabajemos Juntos!!</h2>
+            <form class="contact__form"  action="https://formsubmit.co/f13127b1bab69a6a7cefef35e9509307" method="POST">
+                <div class="contact__emailContainer">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" placeholder="tucorreo@gmail.com" required>
+                </div>
+                <div class="contact__messageContainer">
+                    <label for="mensaje">Mensaje:</label>
+                    <div class="contact__textareaContainer">
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Descripción del mensaje..."
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="contact__buttonWrapper">
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+            </form>
+        </main>
+        <div class="contact_backToHomeButton">
+
+        </div>
+    </section>
 </body>
 
 </html>
