@@ -14,6 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
     window.addEventListener("scroll", highlightNavLink);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const fixedIcon = document.getElementById('fixed-icon');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const showIconPosition = 500;
+        if (scrollY > showIconPosition) {
+            fixedIcon.style.display = 'block';
+        } else {
+            fixedIcon.style.display = 'none';
+        }
+    });
 });
