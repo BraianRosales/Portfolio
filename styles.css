@@ -54,7 +54,7 @@ body {
 }
 
 .nav__name {
-    color: turquoise;
+    color: rgb(13, 167, 167);
     font-size: 45px;
     font-family: 'Nanum Brush Script', cursive;
 }
@@ -85,7 +85,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: turquoise;
+    background-color: rgb(13, 167, 167);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.75s ease;
@@ -97,12 +97,12 @@ body {
 }
 
 .nav__link:hover {
-    color: turquoise;
+    color: rgb(13, 167, 167);
     text-shadow: 4px 3px 3px black;
 }
 
 .nav__link-active {
-    color: turquoise;
+    color: rgb(13, 167, 167);
     text-shadow: 4px 3px 3px black;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .greeting__name {
-    color: turquoise;
+    color: rgb(13, 167, 167);
     border-right: 3px solid;
     padding-right: 3px;
     animation: teclear 2s steps(16), efecto .5s step-end infinite alternate;
@@ -222,11 +222,12 @@ a.card__linkGithub {
 }
 
 .greeting__icons:hover {
-    color: turquoise;
+    color: rgb(13, 167, 167);
 }
 
 a.greeting__buttonDownloadCv {
     text-decoration: none;
+    box-shadow: black 0px 1px 5px 0px;
 }
 
 .greeting__buttonDownloadCv {
@@ -241,7 +242,7 @@ a.greeting__buttonDownloadCv {
 }
 
 .greeting__buttonDownloadCv:hover {
-    border: 1px solid turquoise;
+    border: 1px solid rgb(13, 167, 167);
 }
 
 .greeting__buttonDownloadCv:hover::after {
@@ -296,17 +297,26 @@ a.greeting__buttonDownloadCv {
 .article__title {
     font-size: 20px;
     font-weight: 600;
-    color: turquoise;
+    color: rgb(13, 167, 167);
 }
 
 .article__textList {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .article__textListTitle {
     margin: 5px 0px 5px 0px;
     font-weight: 600;
     font-size: 19px;
+}
+
+.article__textListSubstitle {
+    margin: 5px 0px 5px 0px;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .article__text {
@@ -335,7 +345,7 @@ a.greeting__buttonDownloadCv {
     border-radius: 8px;
     padding: 15px;
     width: 32%;
-    box-shadow: 0px 0px 3px 1px black
+    box-shadow: black 0px 1px 5px 0px;
 }
 
 
@@ -388,7 +398,7 @@ a.greeting__buttonDownloadCv {
 
 .card__title {
     font-size: 16px;
-    color: darkturquoise
+    color: rgb(13, 167, 167)
 }
 
 .card__linkGithub--button {
@@ -396,17 +406,11 @@ a.greeting__buttonDownloadCv {
     justify-content: space-between;
     padding: 4px 3px 4px 3px;
     align-items: center;
-    background-color: transparent;
-    border: 1px solid rgb(26 26 26);
     width: 88px;
     border-radius: 5px;
     transition: 0.5s;
     color: white !important;
-    border: 1px solid #234052;
-}
-
-.card__linkGithub--button:hover {
-    border: 1px solid turquoise
+    background-color: #005f73
 }
 
 .card__buttonText {
@@ -437,7 +441,7 @@ a.greeting__buttonDownloadCv {
 
 .card_subtitle {
     font-size: 16px;
-    color: darkturquoise;
+    color: rgb(13, 167, 167);
     padding-left: 10px;
 }
 
@@ -449,12 +453,11 @@ a.greeting__buttonDownloadCv {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+    width: 100%;
 }
 
 .contact__container {
-    width: 80%;
-    height: 70%;
-    margin-top: 200px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -551,7 +554,7 @@ a.greeting__buttonDownloadCv {
 }
 
 .contact__buttonWrapper button:hover {
-    background-color: teal;
+    background-color: rgb(13, 167, 167);
 }
 
 
@@ -571,13 +574,216 @@ a.greeting__buttonDownloadCv {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.50s;
-}
-
-#fixed-icon:hover {
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: 0px 1px 5px 0px black;
 }
 
 .no-link-color {
     color: white;
     text-decoration: none;
+}
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tablets en orientación vertical */
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets en orientación horizontal y laptops */
+}
+
+@media screen and (width: 820px) and (height: 1180px) {
+
+    /* Ipad AIR. */
+
+    .header {
+        height: 0vh
+    }
+
+    .nav {
+        height: 8vh;
+    }
+
+    .nav__links {
+        gap: 3%;
+        padding-right: 15px;
+        width: 75%;
+    }
+
+    .nav__logo {
+        width: 25%;
+    }
+
+    .section {
+        width: 100%;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .section--inicio {
+        height: 77vh;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding-top: 200px;
+    }
+
+    .picture__container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .greeting {
+        width: 60%;
+    }
+
+    .greeting__container {
+        align-items: center;
+        gap: 8px
+    }
+
+    .greeting__interactions {
+        justify-content: center;
+    }
+
+
+    .section--experience {
+        height: 77vh;
+        padding-top: 60px;
+    }
+
+    .experience__container {
+        gap: 20px;
+    }
+
+    .article__textList {
+        gap: 0px;
+    }
+
+    .section--skills {
+        height: 77vh;
+        padding-top: 90px;
+    }
+
+    .skills__iconContainer {
+        width: 40%;
+    }
+
+    .section--proyects {
+        height: 150vh;
+    }
+
+    .proyects__card {
+        width: 40%;
+    }
+
+
+    .proyects__container {
+        flex-direction: column;
+    }
+
+    .section--contact {
+        height: 95vh;
+        padding-top: 12rem;
+    }
+
+    .section__separator {
+        display: none;
+    }
+
+    .contact__form {
+        width: 90%;
+    }
+}
+
+
+@media screen and (width: 1400px) and (height: 650px) {
+    /* Notebook Dell */
+
+    .section {
+        width: 80%;
+        height: 100vh;
+    }
+
+    .contact__form {
+        width: 85%;
+    }
+
+    .section--experience {
+        margin-top: 30px
+    }
+
+    .experience__container {
+        gap: 10px;
+    }
+
+    .article__text {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        font-size: 15px;
+    }
+
+    .article__textList {
+        gap: 0px;
+    }
+
+    .skills__container {
+        gap: 10px
+    }
+
+    .skills__iconContainer {
+        width: 30%;
+    }
+
+    .skills__iconTitle {
+        font-size: 15px;
+    }
+
+    .skills__iconText {
+        font-size: 15px;
+    }
+
+    .proyects__card {
+        width: 30%;
+        height: 480px;
+        gap: 10px;
+    }
+
+    .contact__container {
+        margin-top: 130px;
+    }
+
+}
+
+@media screen and (width: 1440px) and (height: 900px) {
+    /* Notebook Dell */
+
+    .article__textList {
+        gap: 0px;
+    }
+
+    .experience__container {
+        gap: 20px;
+    }
+
+    .skills__iconContainer {
+        width: 30%;
+    }
+
+    .section {
+        width: 80%;
+    }
+
+    .contact__form {
+        width: 85%;
+    }
 }
