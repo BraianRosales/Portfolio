@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", highlightNavLink);
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const fixedIcon = document.getElementById('fixed-icon');
+document.addEventListener("DOMContentLoaded", function () {
+    const fixedIcon = document.getElementById("fixed-icon");
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
         const scrollY = window.scrollY;
         const showIconPosition = 500;
         if (scrollY > showIconPosition) {
-            fixedIcon.style.display = 'block';
+            fixedIcon.style.display = "block";
         } else {
-            fixedIcon.style.display = 'none';
+            fixedIcon.style.display = "none";
         }
     });
 });
