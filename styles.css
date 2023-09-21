@@ -406,10 +406,15 @@ a.greeting__buttonDownloadCv {
     padding: 3px 3px 3px 3px;
     align-items: center;
     width: 88px;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.5s;
     color: white !important;
-    background-color: rgb(10 163 163 / 56%);
+    background-color: black;
+    border: 1px solid #234052;
+}
+
+.card__linkGithub--button:hover {
+    background-color: teal;
 }
 
 .card__buttonText {
@@ -456,10 +461,8 @@ a.greeting__buttonDownloadCv {
 }
 
 .contact__container {
-    width: 90%;
     width: 80%;
-    height: 70%;
-    margin-top: 150px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -589,6 +592,7 @@ a.greeting__buttonDownloadCv {
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .section {
         width: 95%;
+        gap: 100px;
     }
 
     .section--inicio {
@@ -597,6 +601,7 @@ a.greeting__buttonDownloadCv {
         width: 100%;
         padding-bottom: 0px;
         gap: 10px;
+        height: auto;
     }
 
     .picture {
@@ -658,11 +663,12 @@ a.greeting__buttonDownloadCv {
     }
 
     #experiencia {
-        height: 165vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        padding-top: 100px;
     }
 
     .article__date {
@@ -678,11 +684,13 @@ a.greeting__buttonDownloadCv {
     }
 
     #habilidades {
-        height: 215vh
+        height: auto;
+        padding-top: 100px;
     }
 
     .skills__container {
-        gap: 16px;
+        gap: 15px;
+        
     }
 
     .skills__iconContainer {
@@ -690,16 +698,17 @@ a.greeting__buttonDownloadCv {
     }
 
     .section--skills {
-        height: inherit;
+        height: auto;
     }
 
     #proyectos {
         width: 92%;
-        height: 250vh;
+        height: auto;
+        padding-top: 100px;
     }
 
     .section--proyects {
-        height: inherit;
+        height: auto;
     }
 
     .proyects__container {
@@ -712,11 +721,14 @@ a.greeting__buttonDownloadCv {
 
     .contact__container {
         width: 95%;
+        height: auto;
+        gap: 10px;
     }
 
     .contact__form {
         margin-top: 0px;
         width: 100%;
+        gap: 5px
     }
 
     .contact__container h2 {
@@ -733,7 +745,8 @@ a.greeting__buttonDownloadCv {
         justify-content: flex-start;
     }
 
-    .contact__emailContainer label, .contact__messageContainer label { 
+    .contact__emailContainer label,
+    .contact__messageContainer label {
         justify-content: flex-start;
     }
 
@@ -744,6 +757,11 @@ a.greeting__buttonDownloadCv {
 
     .contact__buttonWrapper button {
         width: 60%;
+    }
+
+    #fixed-icon {
+        bottom: 45px;
+        right: 15px;
     }
 }
 
