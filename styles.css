@@ -40,6 +40,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
+    justify-content: space-between;
+    padding: 30px;
 }
 
 .nav__logo {
@@ -68,6 +70,14 @@ body {
     gap: 5%;
     list-style: none;
     padding-right: 50px;
+}
+
+.nav__menuLinks {
+    display: none;
+}
+
+.icon__menu {
+    display: none;
 }
 
 .nav__link {
@@ -119,6 +129,8 @@ body {
     width: 40%;
     border-bottom: 1px solid rgb(48, 96, 118);
 }
+
+/* -------------------------------------------- HOME --------------------------------------------*/
 
 .section--inicio {
     height: 90vh;
@@ -227,7 +239,6 @@ a.card__linkGithub {
 
 a.greeting__buttonDownloadCv {
     text-decoration: none;
-    box-shadow: black 0px 1px 5px 0px;
 }
 
 .greeting__buttonDownloadCv {
@@ -242,7 +253,8 @@ a.greeting__buttonDownloadCv {
 }
 
 .greeting__buttonDownloadCv:hover {
-    border: 1px solid rgb(13, 167, 167);
+    background-color: teal;
+    border-top: 1px solid #1F2936;
 }
 
 .greeting__buttonDownloadCv:hover::after {
@@ -258,6 +270,9 @@ a.greeting__buttonDownloadCv {
     justify-content: center;
     font-size: 20px;
 }
+
+/* -------------------------------------------- EXPERIENCE --------------------------------------------*/
+
 
 .experience__container {
     width: 75%;
@@ -325,6 +340,9 @@ a.greeting__buttonDownloadCv {
     font-size: 17px;
 }
 
+/* -------------------------------------------- SKILLS --------------------------------------------*/
+
+
 .skills__container {
     width: 100%;
     display: flex;
@@ -359,7 +377,7 @@ a.greeting__buttonDownloadCv {
     font-weight: 600;
 }
 
-/* -------------------------------------------- Proyectos --------------------------------------------*/
+/* -------------------------------------------- PROYECTS --------------------------------------------*/
 
 .proyects__container {
     width: 100%;
@@ -415,6 +433,7 @@ a.greeting__buttonDownloadCv {
 
 .card__linkGithub--button:hover {
     background-color: teal;
+    border: 1px solid #1F2936;
 }
 
 .card__buttonText {
@@ -449,7 +468,7 @@ a.greeting__buttonDownloadCv {
     padding-left: 10px;
 }
 
-/* -------------------------------------------- Contacto --------------------------------------------*/
+/* -------------------------------------------- CONTACT --------------------------------------------*/
 
 .section--contact {
     display: flex;
@@ -560,9 +579,8 @@ a.greeting__buttonDownloadCv {
 
 .contact__buttonWrapper button:hover {
     background-color: rgb(13, 167, 167);
+    border: 1px solid #1F2936;
 }
-
-
 
 .contact_backToHomeButton {
     width: 80%;
@@ -587,9 +605,48 @@ a.greeting__buttonDownloadCv {
     text-decoration: none;
 }
 
-/* SECCION RESPONSIVE */
+/* -------------------------------------------- RESPONSIVE --------------------------------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav__iconMenuContainer {
+        position: relative;
+    }
+
+    .icon__menu {
+        display: block;
+        font-size: 25px;
+        color: turquoise;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .nav__menuLinks {
+        background-color: black;
+        list-style: none;
+        position: absolute;
+        top: 30px;
+        left: -130px;
+        width: 155px;
+        padding: 5px 5px 15px 5px;
+        border-radius: 5px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 5px 3px 5px;
+    }
+
+    .nav__name {
+        font-size: 40px;
+    }
+
     .section {
         width: 95%;
         gap: 100px;
@@ -690,7 +747,7 @@ a.greeting__buttonDownloadCv {
 
     .skills__container {
         gap: 15px;
-        
+
     }
 
     .skills__iconContainer {
@@ -761,24 +818,24 @@ a.greeting__buttonDownloadCv {
 
     #fixed-icon {
         bottom: 45px;
-        right: 15px;
+        right: 26px;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
-        background-color: purple;
+        /* background-color: purple; */
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     body {
-        background-color: #306076;
+        /* background-color: #306076; */
     }
 }

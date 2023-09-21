@@ -30,3 +30,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const iconMenu = document.querySelector('.icon__menu');
+    const menuLinks = document.querySelector('.nav__menuLinks');
+    let menuVisible = false;
+
+    function showMenu() {
+        menuLinks.style.display = 'block';
+        menuVisible = true;
+    }
+
+    function hideMenu() {
+        menuLinks.style.display = 'none';
+        menuVisible = false;
+    }
+
+    iconMenu.addEventListener('click', () => {
+        if (menuVisible) {
+            hideMenu();
+        } else {
+            showMenu();
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+        if (menuVisible && !event.target.closest('.nav__iconMenuContainer')) {
+            hideMenu();
+        }
+    });
+});
