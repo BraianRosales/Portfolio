@@ -74,6 +74,10 @@ body {
     padding-right: 50px;
 }
 
+.nav__linksResponsive {
+    display: none;
+}
+
 .nav__menuLinks {
     display: none;
 }
@@ -613,8 +617,9 @@ a.greeting__buttonDownloadCv {
         display: none;
     }
 
-    .nav__iconMenuContainer {
+    .nav__linksResponsive {
         position: relative;
+        display: block;
     }
 
     .icon__menu {
@@ -830,8 +835,9 @@ a.greeting__buttonDownloadCv {
         display: none;
     }
 
-    .nav__iconMenuContainer {
+    .nav__linksResponsive {
         position: relative;
+        display: block;
     }
 
     .icon__menu {
@@ -860,6 +866,8 @@ a.greeting__buttonDownloadCv {
         flex-direction: column;
         padding: 15px 5px 3px 5px;
     }
+
+    
 
     .nav__name {
         font-size: 40px;
@@ -1049,8 +1057,9 @@ a.greeting__buttonDownloadCv {
         display: none;
     }
 
-    .nav__iconMenuContainer {
+    .nav__linksResponsive {
         position: relative;
+        display: block;
     }
 
     .icon__menu {
@@ -1262,5 +1271,26 @@ a.greeting__buttonDownloadCv {
     #fixed-icon {
         bottom: 45px;
         right: 26px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1460px) {
+    .section {
+        width: 100%;
+        padding-top: 75px
+    }
+
+    #habilidades {
+        width: 90%;
+    }
+
+    #fixed-icon {
+        bottom: 40px;
+        right: 25px
+    }
+
+    .nav__name {
+        width: 60px;
+        height: 60px
     }
 }

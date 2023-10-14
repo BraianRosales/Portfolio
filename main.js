@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav__link");
+    const navLinksResonsive = document.querySelectorAll(".nav__menu-linkResponsive");
+    const navLinks = document.querySelectorAll(".nav__menu-link");
+
 
     function highlightNavLink() {
         const scrollPosition = window.scrollY;
@@ -8,6 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const section = document.querySelector(link.getAttribute("href"));
             if (section.offsetTop <= scrollPosition + 100) {
                 navLinks.forEach((link) => {
+                    link.classList.remove("nav__link-active");
+                });
+                link.classList.add("nav__link-active");
+            }
+        });
+
+        navLinksResonsive.forEach((link) => {
+            const section = document.querySelector(link.getAttribute("href"));
+            if (section.offsetTop <= scrollPosition + 100) {
+                navLinksResonsive.forEach((link) => {
                     link.classList.remove("nav__link-active");
                 });
                 link.classList.add("nav__link-active");
@@ -55,8 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.addEventListener('click', (event) => {
-        if (menuVisible && !event.target.closest('.nav__iconMenuContainer')) {
+        if (menuVisible && !event.target.closest('.nav__linksResponsive')) {
             hideMenu();
         }
     });
+
 });
