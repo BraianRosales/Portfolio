@@ -839,9 +839,40 @@ li {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    /* background-color: purple; */
+@media screen and (min-height: 550px) and (max-height: 666px) {
 
+    .section {
+        gap: 50px;
+    }
+
+    .section--inicio {
+        margin-top: 125px;
+    }
+
+    .picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .greeting__text {
+        font-size: 13px;
+    }
+
+    .article__text {
+        font-size: 13px;
+    }
+
+    .contact__container {
+        margin-top: 60px;
+    }
+
+    .contact__container h2 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .nav__links {
         display: none;
     }
