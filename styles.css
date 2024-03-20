@@ -137,7 +137,6 @@ body {
 /* -------------------------------------------- HOME --------------------------------------------*/
 
 .section--inicio {
-    height: 90vh;
     display: flex;
     padding-bottom: 50px;
     width: 95%;
@@ -263,7 +262,6 @@ a.greeting__buttonDownloadCv {
 .section--experience,
 .section--skills,
 .section--proyects {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,13 +399,13 @@ li {
 
 .proyects__card {
     width: 25%;
-    height: 500px;
+    height: 450px;
     border-radius: 5px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    box-shadow: 0px 0px 3px 1px black;
+    border: 1px  solid black;
 }
 
 .card__image {
@@ -424,7 +422,7 @@ li {
 }
 
 .card__title {
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(13, 167, 167)
 }
 
@@ -437,7 +435,6 @@ li {
     border-radius: 3px;
     transition: 0.5s;
     color: white !important;
-    background-color: rgb(14 155 155);
     border: 1px solid #234052;
 }
 
@@ -456,10 +453,10 @@ li {
 }
 
 .card__article {
-    font-size: 12px;
+    font-size: 15px;
     width: 100%;
     padding: 0px 10px 0px 10px;
-    line-height: 18px;
+    line-height: 22px;
 }
 
 .card__abilities ul {
@@ -473,7 +470,7 @@ li {
 }
 
 .card_subtitle {
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(13, 167, 167);
     padding-left: 10px;
 }
@@ -656,8 +653,8 @@ li {
     }
 
     .section {
-        width: 95%;
         gap: 100px;
+        width: 90%;
     }
 
     .section--inicio {
@@ -665,8 +662,7 @@ li {
         align-items: center;
         width: 100%;
         padding-bottom: 0px;
-        margin-top: 150px;
-        gap: 10px;
+        gap: 25px;
         height: auto;
     }
 
@@ -678,7 +674,8 @@ li {
 
     .picture__container {
         width: 100%;
-        height: 100%
+        height: 100%;
+        border-radius: 5%;
     }
 
     .greeting {
@@ -784,7 +781,7 @@ li {
     }
 
     .proyects__card {
-        width: 92%;
+        width: 85%;
     }
 
     .contact__container {
@@ -801,6 +798,7 @@ li {
 
     .contact__container h2 {
         margin-left: 0px;
+        font-size: 25px;
     }
 
     .contact__emailContainer,
@@ -837,10 +835,6 @@ li {
 
     .section {
         gap: 50px;
-    }
-
-    .section--inicio {
-        margin-top: 125px;
     }
 
     .picture {
@@ -911,9 +905,7 @@ li {
     }
 
     .section {
-        width: 95%;
         gap: 100px;
-
     }
 
     .section--inicio {
@@ -1040,7 +1032,7 @@ li {
     }
 
     .proyects__card {
-        width: 92%;
+        width: 90%;
     }
 
     /* -----------------------------------------CONTACT------------------------------------------ */
@@ -1134,7 +1126,6 @@ li {
     }
 
     .section {
-        width: 95%;
         gap: 100px;
 
     }
@@ -1262,7 +1253,7 @@ li {
     }
 
     .proyects__card {
-        width: 46%;
+        width: 35%;
     }
 
     /* -----------------------------------------CONTACT------------------------------------------ */
@@ -1315,7 +1306,6 @@ li {
 
 @media screen and (min-width: 1200px) and (max-width: 1460px) {
     .section {
-        width: 100%;
         padding-top: 75px;
         gap: 50px;
     }
