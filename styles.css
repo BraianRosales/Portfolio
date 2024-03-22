@@ -32,7 +32,7 @@ body {
     background-color: #1F2936;
     display: flex;
     align-items: center;
-    box-shadow: rgb(0 0 0 / 57%) 0px 0px 35px;
+    box-shadow: rgb(0 0 0 / 45%) 0px 0px 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -129,10 +129,21 @@ body {
     align-items: center;
 }
 
-.section__separator {
-    width: 40%;
-    border-bottom: 1px solid rgb(48, 96, 118);
+#acercaDeMi, #proyectos, #habilidades {
+    position: relative;
 }
+
+#acercaDeMi::after ,#proyectos::after, #habilidades::after {
+    content: '';
+    position: absolute; 
+    bottom: 0;
+    left: 50%;
+    width: 30%;
+    height: 1px;
+    background-color:  rgb(48, 96, 118);
+    transform: translateX(-50%);
+}
+
 
 /* -------------------------------------------- HOME --------------------------------------------*/
 
@@ -155,7 +166,7 @@ body {
     height: 300px;
     border-radius: 50%;
     border: 1px solid rgb(54, 54, 54);
-    background-image: url('/assets/1650231572382.jpg');
+    background-image: url('/assets/imagen-perfil.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -191,7 +202,7 @@ body {
 }
 
 .greeting__name {
-    color: rgb(13, 167, 167);
+    color: turquoise;
     border-right: 3px solid;
     padding-right: 3px;
     animation: teclear 2s steps(16), efecto .5s step-end infinite alternate;
@@ -238,7 +249,7 @@ a.card__linkGithub {
 }
 
 .greeting__icons:hover {
-    color: rgb(13, 167, 167);
+    color: turquoise;
 }
 
 a.greeting__buttonDownloadCv {
@@ -312,7 +323,7 @@ a.greeting__buttonDownloadCv {
 .article__title {
     font-size: 20px;
     font-weight: 600;
-    color: rgb(13, 167, 167);
+    color: turquoise;
 }
 
 .article__textList {
@@ -350,7 +361,6 @@ li {
 
 /* -------------------------------------------- SKILLS --------------------------------------------*/
 
-
 .skills__container {
     width: 100%;
     display: flex;
@@ -370,7 +380,7 @@ li {
     border-radius: 8px;
     padding: 15px;
     width: 32%;
-    box-shadow: black 0px 1px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 5px;
 }
 
 
@@ -405,7 +415,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    border: 1px  solid black;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 10px;
 }
 
 .card__image {
@@ -423,7 +433,7 @@ li {
 
 .card__title {
     font-size: 20px;
-    color: rgb(13, 167, 167)
+    color: turquoise
 }
 
 .card__linkGithub--button {
@@ -487,25 +497,20 @@ li {
 }
 
 .contact__container {
-    width: 80%;
+    padding-top: 50px;
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact__container h2 {
-    margin-left: 100px;
+    gap: 15px;
 }
 
 .contact__form {
-    margin-top: 25px;
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .contact__emailContainer,
@@ -513,14 +518,14 @@ li {
     width: 100%;
     display: flex;
     align-items: start;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .contact__emailContainer label,
 .contact__messageContainer label {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     width: 110px;
     padding: 5px;
     box-sizing: border-box;
@@ -544,6 +549,10 @@ li {
 
 .contact__textareaContainer {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
 .contact__messageContainer textarea {
@@ -565,15 +574,14 @@ li {
 }
 
 .contact__buttonWrapper {
-    width: 100%;
+    width: 75%;
     height: 40px;
     display: flex;
     justify-content: center;
-    padding-left: 110px;
 }
 
 .contact__buttonWrapper button {
-    width: 25%;
+    width: 22%;
     cursor: pointer;
     padding: 5px;
     border-radius: 5px;
@@ -772,7 +780,7 @@ li {
     }
 
     .contact__container {
-        width: 95%;
+        width: 100%;
         gap: 10px;
     }
 
@@ -1255,7 +1263,6 @@ li {
 
 @media screen and (min-width: 1200px) and (max-width: 1460px) {
     .section {
-        padding-top: 75px;
         gap: 50px;
     }
 

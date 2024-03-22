@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bradev-portafolio</title>
+  <title>bradev-portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -66,7 +66,7 @@
       </div>
     </nav>
   </header>
-  <section class="section">
+  <section id="acercaDeMi" class="section">
     <main class="section--inicio">
       <div class="picture">
         <div class="picture__container"></div>
@@ -142,9 +142,7 @@
                   - Soporte y capacitación técnica a nuevos ingresantes en el
                   proyecto.
                 </li>
-                <li>
-                  - Entrevistas técnicas Frontend.
-                </li>
+                <li>- Entrevistas técnicas Frontend.</li>
               </ul>
             </div>
           </div>
@@ -170,12 +168,14 @@
                   toda la app.
                 </li>
                 <li>
-                  - Desarrollé un administrador por roles y permisos dentro de la aplicación del centro de distribución
-                  de mercaderia.
+                  - Desarrollé un administrador por roles y permisos dentro de
+                  la aplicación del centro de distribución de mercaderia.
                 </li>
                 <li>
-                  - Agregué funcionalidades para la aplicación web coto digital (Envío a domicilio), manejando los
-                  estados de los pedidos desde que se realiza el pedido, se pesa, se cobra y se despacha..
+                  - Agregué funcionalidades para la aplicación web coto
+                  digital (Envío a domicilio), manejando los estados de los
+                  pedidos desde que se realiza el pedido, se pesa, se cobra y
+                  se despacha..
                 </li>
               </ul>
             </div>
@@ -202,20 +202,6 @@
             tipos de comidas, ver sus detalles, videos de como prepararlas y
             guardarlas en tu sección de favoritos.
           </article>
-          <!-- <div class="card__abilities">
-            <span class="card_subtitle">Tecnologías:</span>
-            <ul>
-              <li>· Html</li>
-              <li>· Css3</li>
-              <li>· Reponsive</li>
-              <li>· Sass</li>
-              <li>· Typescript</li>
-              <li>· Angular v13</li>
-              <li>· RxJs</li>
-              <li>· Angular Material</li>
-              <li>· Git</li>
-            </ul>
-          </div> -->
         </div>
         <div class="proyects__card">
           <img class="card__image" src="assets/fondoCard.jpg" alt="" />
@@ -363,12 +349,12 @@
             <div class="contact__textareaContainer">
               <textarea id="mensaje" name="mensaje" rows="4" placeholder="Descripción del mensaje..."
                 required></textarea>
+              <div class="contact__buttonWrapper">
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="_next" value="https://portfoliobradev.netlify.app/#contacto" />
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
             </div>
-          </div>
-          <div class="contact__buttonWrapper">
-            <button type="submit">Enviar</button>
-            <input type="hidden" name="_next" value="https://portfoliobradev.netlify.app/#contacto" />
-            <input type="hidden" name="_captcha" value="false" />
           </div>
         </form>
       </div>
