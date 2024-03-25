@@ -1,0 +1,65 @@
+{
+    "nav": {
+        "home":"INICIO",
+        "experience":"EXPERIENCIA",
+        "projects":"PROYECTOS",
+        "skills":"HABILIDADES",
+        "contact":"CONTACTO"
+    },
+    "aboutMe": {
+        "greeting": "Hola! Soy Braian Rosales",
+        "rol":"Desarrollador Front end",
+        "descriptionOne":"Bienvenid@ a mi portafolio como desarrollador Front end. Estoy encantado de tener la oportunidad de presentarte mis proyectos y habilidades creando aplicaciones Web.",
+        "descriptionTwo":"En cada proyecto en el que me involucro, mi objetivo es mantenerme actualizado, superar mis límites y adoptar las mejores prácticas en el desarrollo de software. Mi enfoque es siempre encontrar soluciones innovadoras y eficientes.",
+        "cvButton":"Descargar CV"
+    },
+    "experienceTwo": {
+        "title": "Octubre 2022 - Presente",
+        "subtitle":"Desarrollador Front end en Accusys Technology",
+        "description":"Formo parte del equipo encargado de desarrollar y mantener interfaces de usuarios en la consultora. Me encuentro en el area de I+D (Investigación y Desarrollo). En este momento estoy involucrado con el desarrollo de una aplicación de manejo de cuentas y solicitudes para el banco Macro.",
+        "titleResponsibilities":"Mis responsabilidades son:",
+        "resOne":"- Análisis de casos de uso.",
+        "resTwo":"- Desarrollar modulos, componentes y funcionalidades propuestas por el equipo de UX UI.",
+        "resThree":"- Aportar ideas y visión desde el front sobre soluciones en conjunto con el equipo.",
+        "resFour":"- Mantener y crear componentes dinámicos reutilizables en toda la app.",
+        "resFive":"- Manejo del estado global de la aplicación siguiendo buenas prácticas de RxJs.",
+        "resSix":"- Soporte y capacitación técnica a nuevos ingresantes en el proyecto.",
+        "resSeven":"- Entrevistas técnicas Frontend."
+    },
+    "experienceOne": {
+        "title": "Mayo 2022 - Octubre 2022",
+        "subtitle":"Desarrollador Front end en COTO",
+        "description":"Desarrollo con Angular de nuevos modulos, componentes, features, fix de bugs y refactor de aplicaciones en producción.",
+        "titleResponsibilities":"Mis responsabilidades fueron:",
+        "resOne":"- Fix de bugs.",
+        "resTwo":"- Mantener y crear componentes dinamicos reutilizables en toda la app.",
+        "resThree":"- Desarrollé un administrador por roles y permisos dentro de la aplicación del centro de distribución de mercaderia.",
+        "resFour":"- Agregué funcionalidades para la aplicación web coto digital (Envío a domicilio), manejando los estados de los pedidos desde que se realiza el pedido, se pesa, se cobra y se despacha."
+    },
+    "projectOne": {
+        "codeButton": "Código",
+        "description":"Aplicación de recetas de comidas. Vas a poder encontrar diferentes tipos de comidas, de distintos lugares del mundo y aprenderlas!"
+    },
+    "skills": {
+        "skillOne":"Marcado Web",
+        "skillTwo":"Estilo Web",
+        "skilThree":"Sitios adaptables",
+        "skillFour":"Preprocesador CSS",
+        "skillFive":"Interactividad Web",
+        "skillSix":"Superconjunto de JavaScript",
+        "skillSeven":"Framework de Javascript",
+        "skillEight":"Librería de estilos",
+        "skillNine":"Programación reactiva",
+        "skillTen":"Librería manejo de estado",
+        "skillEleven":"Base de datos NoSQL",
+        "skillTwelve":"Gestión de bases de datos",
+        "skillThirteen":"Sistema control de versiones"
+    },
+    "contact": {
+        "title":"Trabajemos juntos",
+        "placeholder":"tucorreo@gmail.com",
+        "mail":"E-mail",
+        "msg":"Mensaje",
+        "sendButton":"Enviar"
+    }
+}

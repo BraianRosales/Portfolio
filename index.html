@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
   <header id="inicio" class="header">
     <nav class="nav">
       <div class="nav__logo">
@@ -30,42 +31,60 @@
         </a>
       </div>
       <ul class="nav__links">
-        <li><a href="#inicio" class="nav__link nav__menu-link">INICIO</a></li>
+        <li><a href="#inicio" class="nav__link nav__menu-link"><span data-section="nav"
+              data-value="home">INICIO</span></a></li>
         <li>
-          <a href="#experiencia" class="nav__link nav__menu-link">EXPERIENCIA</a>
+          <a href="#experiencia" class="nav__link nav__menu-link"><span data-section="nav"
+              data-value="experience">EXPERIENCIA</span></a>
         </li>
         <li>
-          <a href="#proyectos" class="nav__link nav__menu-link">PROYECTOS</a>
+          <a href="#proyectos" class="nav__link nav__menu-link"><span data-section="nav"
+              data-value="projects">PROYECTOS</span></a>
         </li>
         <li>
-          <a href="#habilidades" class="nav__link nav__menu-link">HABILIDADES</a>
+          <a href="#habilidades" class="nav__link nav__menu-link"><span data-section="nav"
+              data-value="skills">HABILIDADES</span></a>
         </li>
         <li>
-          <a href="#contacto" class="nav__link nav__menu-link">CONTACTO</a>
+          <a href="#contacto" class="nav__link nav__menu-link"><span data-section="nav"
+              data-value="contact">CONTACTO</span></a>
         </li>
       </ul>
       <div class="nav__linksResponsive">
         <i class="fa-solid fa-bars icon__menu"></i>
         <ul class="nav__menuLinks">
           <li>
-            <a href="#inicio" class="nav__link nav__menu-linkResponsive">INICIO</a>
+            <a href="#inicio" class="nav__link nav__menu-linkResponsive"><span data-section="nav"
+                data-value="home">INICIO</span></a>
           </li>
           <li>
-            <a href="#experiencia" class="nav__link nav__menu-linkResponsive">EXPERIENCIA</a>
+            <a href="#experiencia" class="nav__link nav__menu-linkResponsive"><span data-section="nav"
+                data-value="experience">EXPERIENCIA</span></a>
           </li>
           <li>
-            <a href="#proyectos" class="nav__link nav__menu-linkResponsive">PROYECTOS</a>
+            <a href="#proyectos" class="nav__link nav__menu-linkResponsive"><span data-section="nav"
+                data-value="projects">PROYECTOS</span></a>
           </li>
           <li>
-            <a href="#habilidades" class="nav__link nav__menu-linkResponsive">HABILIDADES</a>
+            <a href="#habilidades" class="nav__link nav__menu-linkResponsive"><span data-section="nav"
+                data-value="skills">HABILIDADES</span></a>
           </li>
           <li>
-            <a href="#contacto" class="nav__link nav__menu-linkResponsive">CONTACTO</a>
+            <a href="#contacto" class="nav__link nav__menu-linkResponsive"><span data-section="nav"
+                data-value="contact">CONTACTO</span></a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+  <div id="flags" class="flags">
+    <div class="flags__item" data-language="es">
+      <img class="flag__img" src="assets/svg/spain.svg" alt="SPAIN-img" />
+    </div>
+    <div class="flags__item" data-language="en">
+      <img class="flag__img" src="assets/svg/united-kingdom.svg" alt="UNITEDKINGDOM-img" />
+    </div>
+  </div>
   <section id="acercaDeMi" class="section">
     <main class="section--inicio">
       <div class="picture">
@@ -73,16 +92,16 @@
       </div>
       <div class="greeting">
         <div class="greeting__container">
-          <h1 class="greeting__title">
+          <h1 class="greeting__title" data-section="aboutMe" data-value="greeting">
             Hola! Soy <span class="greeting__name">Braian Rosales</span>
           </h1>
-          <h3 class="greeting__subtitle">Desarrollador Front-end</h3>
-          <p class="greeting__text">
-            Bienvenid@ a mi portafolio como desarrollador Front-end. Estoy
+          <h3 class="greeting__subtitle" data-section="aboutMe" data-value="rol">Desarrollador Front end</h3>
+          <p class="greeting__text" data-section="aboutMe" data-value="descriptionOne">
+            Bienvenid@ a mi portafolio como desarrollador Front end. Estoy
             encantado de tener la oportunidad de presentarte mis proyectos y
             habilidades creando aplicaciones Web.
           </p>
-          <p class="greeting__text">
+          <p class="greeting__text" data-section="aboutMe" data-value="descriptionTwo">
             En cada proyecto en el que me involucro, mi objetivo es mantenerme
             actualizado, superar mis límites y adoptar las mejores prácticas
             en el desarrollo de software. Mi enfoque es siempre encontrar
@@ -95,7 +114,9 @@
             <a class="greeting__link" href="https://www.linkedin.com/in/braian-rosalesit/" target="_blank">
               <i class="fa-brands fa-linkedin greeting__icons"></i>
             </a>
-            <a class="greeting__buttonDownloadCv" href="assets/CV-BraianRosales.pdf" download>Descargar CV</a>
+            <a class="greeting__buttonDownloadCv" href="assets/CV-BraianRosales.pdf" download>
+              <span data-section="aboutMe" data-value="cvButton">Descargar CV</span>
+            </a>
           </div>
         </div>
       </div>
@@ -107,10 +128,11 @@
         <article class="article">
           <div class="article__mark"></div>
           <div class="article__info">
-            <span class="article__date">Octubre 2022 - Presente</span>
-            <span class="article__title">Desarrollador Frontend en Accusys Technology</span>
+            <span class="article__date" data-section="experienceTwo" data-value="title">Octubre 2022 - Presente</span>
+            <span class="article__title" data-section="experienceTwo" data-value="subtitle">Desarrollador Front end en
+              Accusys Technology</span>
             <div class="article__text">
-              <p class="article__line-spacing">
+              <p class="article__line-spacing" data-section="experienceTwo" data-value="description">
                 Formo parte del equipo encargado de desarrollar y mantener
                 interfaces de usuarios en la consultora. Me encuentro en el
                 area de I+D (Investigación y Desarrollo). En este momento
@@ -118,31 +140,31 @@
                 manejo de cuentas y solicitudes para el banco Macro.
               </p>
               <ul class="article__textList">
-                <div class="article__textListTitle">
+                <div class="article__textListTitle" data-section="experienceTwo" data-value="titleResponsibilities">
                   Mis responsabilidades son:
                 </div>
-                <li>- Análisis de casos de uso.</li>
-                <li>
+                <li data-section="experienceTwo" data-value="resOne">- Análisis de casos de uso.</li>
+                <li data-section="experienceTwo" data-value="resTwo">
                   - Desarrollar modulos, componentes y funcionalidades
                   propuestas por el equipo de UX UI.
                 </li>
-                <li>
+                <li data-section="experienceTwo" data-value="resThree">
                   - Aportar ideas y visión desde el front sobre soluciones en
                   conjunto con el equipo.
                 </li>
-                <li>
+                <li data-section="experienceTwo" data-value="resFour">
                   - Mantener y crear componentes dinámicos reutilizables en
                   toda la app.
                 </li>
-                <li>
+                <li data-section="experienceTwo" data-value="resFive">
                   - Manejo del estado global de la aplicación siguiendo buenas
                   prácticas de RxJs.
                 </li>
-                <li>
+                <li data-section="experienceTwo" data-value="resSix">
                   - Soporte y capacitación técnica a nuevos ingresantes en el
                   proyecto.
                 </li>
-                <li>- Entrevistas técnicas Frontend.</li>
+                <li data-section="experienceTwo" data-value="resSeven">- Entrevistas técnicas Front end.</li>
               </ul>
             </div>
           </div>
@@ -150,32 +172,34 @@
         <article class="article">
           <div class="article__mark"></div>
           <div class="article__info">
-            <span class="article__date"> Mayo 2022 - Octubre 2022 </span>
-            <span class="article__title">Desarrollador Frontend en COTO</span>
+            <span class="article__date" data-section="experienceOne" data-value="title"> Mayo 2022 - Octubre 2022
+            </span>
+            <span class="article__title" data-section="experienceOne" data-value="subtitle">Desarrollador Front end en
+              COTO</span>
             <div class="article__text">
-              <p>
+              <p data-section="experienceOne" data-value="description">
                 Desarrollo con Angular de nuevos modulos, componentes,
                 features, fix de bugs y refactor de aplicaciones en
                 producción.
               </p>
               <ul class="article__textList">
-                <div class="article__textListTitle">
+                <div class="article__textListTitle" data-section="experienceOne" data-value="titleResponsibilities">
                   Mis responsabilidades fueron:
                 </div>
-                <li>- Fix de bugs.</li>
-                <li>
+                <li data-section="experienceOne" data-value="resOne">- Fix de bugs.</li>
+                <li data-section="experienceOne" data-value="resTwo">
                   - Mantener y crear componentes dinamicos reutilizables en
                   toda la app.
                 </li>
-                <li>
+                <li data-section="experienceOne" data-value="resThree">
                   - Desarrollé un administrador por roles y permisos dentro de
                   la aplicación del centro de distribución de mercaderia.
                 </li>
-                <li>
+                <li data-section="experienceOne" data-value="resFour">
                   - Agregué funcionalidades para la aplicación web coto
                   digital (Envío a domicilio), manejando los estados de los
                   pedidos desde que se realiza el pedido, se pesa, se cobra y
-                  se despacha..
+                  se despacha.
                 </li>
               </ul>
             </div>
@@ -189,17 +213,17 @@
       <div class="proyects__container">
         <div class="proyects__card">
           <a class="proyects__a" href="https://savoryquest.netlify.app" target="_blank">
-            <img class="card__image" src="assets/projects-img/savoryQuest.png" alt="SavoryQuest-img" />
+            <img class="card__image" src="assets/img/projects-img/savoryQuest.png" alt="SavoryQuest-img" />
           </a>
           <div class="card_titleAndIcon">
             <span class="card__title">Savory Quest</span>
             <a class="card__linkGithub card__linkGithub--button" href="https://github.com/BraianRosales/SavoryQuest"
               target="_blank">
-              <p class="card__buttonText">Código</p>
+              <p class="card__buttonText" data-section="projectOne" data-value="codeButton">Código</p>
               <i class="fa-brands fa-github card__iconGithub"></i>
             </a>
           </div>
-          <article class="card__article">
+          <article class="card__article" data-section="projectOne" data-value="description">
             Aplicación de recetas de comidas. Vas a poder encontrar diferentes
             tipos de comidas, de distintos lugares del mundo y aprenderlas!
           </article>
@@ -226,7 +250,7 @@
         </div>
         <div class="proyects__card">
           <a class="proyects__a" href="https://savoryquest.netlify.app" target="_blank">
-            <img class="card__image" src="assets/fondoCard.jpg" alt="" />
+            <img class="card__image" src="assets/img/fondoCard.jpg" alt="" />
           </a>
           <div class="card_titleAndIcon">
             <h1 class="card__title"></h1>
@@ -236,7 +260,7 @@
         </div>
         <div class="proyects__card">
           <a class="proyects__a" href="https://savoryquest.netlify.app" target="_blank">
-            <img class="card__image" src="assets/fondoCard.jpg" alt="" />
+            <img class="card__image" src="assets/img/fondoCard.jpg" alt="" />
           </a>
           <div class="card_titleAndIcon">
             <h1 class="card__title"></h1>
@@ -254,87 +278,95 @@
           <img src="assets/svg/html5.svg" alt="HTML5Icon" />
           <div>
             <p class="skills__iconTitle">Html 5</p>
-            <p class="skills__iconText">Marcado Web</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillOne">Marcado Web</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/css3.svg" alt="CSS3Icon" />
           <div>
             <p class="skills__iconTitle">CSS3</p>
-            <p class="skills__iconText">Estilo Web</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillTwo">Estilo Web</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/responsive.svg" alt="CSS3Icon" />
           <div>
             <p class="skills__iconTitle">Responsive Web Design</p>
-            <p class="skills__iconText">Sitios adaptables</p>
+            <p class="skills__iconText" data-section="skills" data-value="skilThree">Sitios adaptables</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/sass.svg" alt="SASSIcon" />
           <div>
             <p class="skills__iconTitle">SASS</p>
-            <p class="skills__iconText">Preprocesador CSS</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillFour">Preprocesador CSS</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/javascript.svg" alt="JSIcon" />
           <div>
             <p class="skills__iconTitle">Javascript</p>
-            <p class="skills__iconText">Interactividad Web</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillFive">Interactividad Web</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/typescript.svg" alt="TSIcon" />
           <div>
             <p class="skills__iconTitle">Typescript</p>
-            <p class="skills__iconText">Superconjunto de JavaScript</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillSix">Superconjunto de JavaScript</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/angular.svg" alt="ANGULARIcon" />
           <div>
             <p class="skills__iconTitle">Angular</p>
-            <p class="skills__iconText">Framework de Javascript</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillSeven">Framework de Javascript</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/angularMaterial.svg" alt="MATERIALIcon" />
           <div>
             <p class="skills__iconTitle">Angular Material</p>
-            <p class="skills__iconText">Librería de estilos</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillEight">Librería de estilos</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/rxjs.svg" alt="RXJSIcon" />
           <div>
             <p class="skills__iconTitle">RxJs</p>
-            <p class="skills__iconText">Programación reactiva</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillNine">Programación reactiva</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/ngrx.svg" alt="NGRXIcon" />
           <div>
             <p class="skills__iconTitle">NgRx</p>
-            <p class="skills__iconText">Librería manejo de estado</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillTen">Librería manejo de estado</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/firebase.svg" alt="SCRUMIcon" />
           <div>
             <p class="skills__iconTitle">Firebase</p>
-            <p class="skills__iconText">Base de datos NoSQL</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillEleven">Base de datos NoSQL</p>
           </div>
         </div>
         <div class="skill__card">
           <img src="assets/svg/mysql.svg" alt="MYSQLIcon" />
           <div>
             <p class="skills__iconTitle">MySQL</p>
-            <p class="skills__iconText">Gestión de bases de datos</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillTwelve">Gestión de bases de datos</p>
           </div>
         </div>
         <div class="skill__card">
+          <img src="assets/svg/git.svg" alt="GITIcon" />
+          <div>
+            <p class="skills__iconTitle">GIT</p>
+            <p class="skills__iconText" data-section="skills" data-value="skillThirteen">Sistema control de versiones
+            </p>
+          </div>
+        </div>
+        <!-- <div class="skill__card">
           <img src="assets/svg/java.svg" alt="JAVAIcon" />
           <div>
             <p class="skills__iconTitle">Java</p>
@@ -347,33 +379,26 @@
             <p class="skills__iconTitle">Spring Boot</p>
             <p class="skills__iconText">Marco web de Java</p>
           </div>
-        </div>
-        <div class="skill__card">
-          <img src="assets/svg/git.svg" alt="GITIcon" />
-          <div>
-            <p class="skills__iconTitle">GIT</p>
-            <p class="skills__iconText">Sistema control de versiones</p>
-          </div>
-        </div>
+        </div> -->
       </div>
     </main>
   </section>
   <section id="contacto" class="section">
     <main class="section--contact">
       <div class="contact__container">
-        <h2>Trabajemos Juntos!!</h2>
+        <h2 data-section="contact" data-value="title">Trabajemos Juntos!!</h2>
         <form class="contact__form" action="https://formsubmit.co/f13127b1bab69a6a7cefef35e9509307" method="POST">
           <div class="contact__emailContainer">
-            <label for="email">E-mail:</label>
+            <label for="email" data-section="contact" data-value="mail">E-mail:</label>
             <input type="text" id="email" name="email" placeholder="tucorreo@gmail.com" required autocomplete="off" />
           </div>
           <div class="contact__messageContainer">
-            <label for="mensaje">Mensaje:</label>
+            <label for="mensaje" data-section="contact" data-value="msg">Mensaje:</label>
             <div class="contact__textareaContainer">
               <textarea id="mensaje" name="mensaje" rows="4" placeholder="Descripción del mensaje..."
                 required></textarea>
               <div class="contact__buttonWrapper">
-                <button type="submit">Enviar</button>
+                <button type="submit" data-section="contact" data-value="sendButton">Enviar</button>
                 <input type="hidden" name="_next" value="https://portfoliobradev.netlify.app/#contacto" />
                 <input type="hidden" name="_captcha" value="false" />
               </div>

@@ -1,0 +1,65 @@
+{
+    "nav": {
+        "home":"HOME",
+        "experience":"EXPERIENCE",
+        "projects":"PROJECTS",
+        "skills":"SKILLS",
+        "contact":"CONTACT"
+    },
+    "aboutMe": {
+        "greeting": "Hi! I'm Braian Rosales",
+        "rol":"Front end Developer",
+        "descriptionOne":"Welcome to my portfolio as a Front end Developer. I'm glad to have the opportunity to introduce you to my projects and skills creating web applications.",
+        "descriptionTwo":"In every project I get involved in, my goal is to keep myself updated, push my limits and adopt the best practices in software development. My approach is always to find innovative and efficient solutions.",
+        "cvButton":"Download CV"
+    },
+    "experienceTwo": {
+        "title": "October 2022 - Present",
+        "subtitle":"Frontend Developer at Accusys Technology",
+        "description":"I am part of the team in charge of developing and maintaining user interfaces in the consulting firm. I am in the I+D (Research and Development) area. At the moment I am involved with the development of an account and application management application for Macro bank.",
+        "titleResponsibilities":"My responsibilities are:",
+        "resOne":"- Use case analysis.",
+        "resTwo":"- Develop modules, components and functionalities proposed by the UX UI team.",
+        "resThree":"- Contribute ideas and vision from the front end on solutions together with the team.",
+        "resFour":"- Maintain and create reusable dynamic components throughout the app.",
+        "resFive":"- Manage the global state of the application following RxJs best practices.",
+        "resSix":"- Support and technical training to new entrants in the project.",
+        "resSeven":"- Frontend technical interviews."
+    },
+    "experienceOne": {
+        "title": "May 2022 - October 2022",
+        "subtitle":"Front end developer at COTO",
+        "description":"Development with Angular of new modules, components, features, bug fixes and refactor of applications in production.",
+        "titleResponsibilities":"My responsibilities were:",
+        "resOne":"- Fix bugs.",
+        "resTwo":"- Maintain and create reusable dynamic components throughout the app.",
+        "resThree":"- Developed a role and permissions based administrator within the merchandise distribution center application.",
+        "resFour":"- I added functionalities for the web application coto digital (home delivery), managing the status of the orders from the time the order is placed, weighed, charged and shipped."
+    },
+    "projectOne": {
+        "codeButton": "Code",
+        "description":"Food recipes application. You will be able to find different types of food, from different parts of the world and learn them!"
+    },
+    "skills": {
+        "skillOne":"Web Markup",
+        "skillTwo":"Web Style",
+        "skilThree":"Responsive Sites",
+        "skillFour":"CSS Preprocessor",
+        "skillFive":"Web Interactivity",
+        "skillSix":"JavaScript superset",
+        "skillSeven":"JavaScript Framework",
+        "skillEight":"Style library",
+        "skillNine":"Reactive Programming",
+        "skillTen":"State handling library",
+        "skillEleven":"NoSQL database",
+        "skillTwelve":"Database management",
+        "skillThirteen":"Version control system"
+    },
+    "contact": {
+        "title":"Let's work together!",
+        "placeholder":"youremail@gmail.com",
+        "mail":"E-mail",
+        "msg":"Message",
+        "sendButton":"Send"
+    }
+}

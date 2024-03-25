@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinksResonsive = document.querySelectorAll(".nav__menu-linkResponsive");
     const navLinks = document.querySelectorAll(".nav__menu-link");
 
-
     function highlightNavLink() {
         const scrollPosition = window.scrollY;
 
@@ -71,5 +70,28 @@ document.addEventListener("DOMContentLoaded", function () {
             hideMenu();
         }
     });
+});
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const textsToChange = document.querySelectorAll("[data-section]");
+
+    const changeLanguage = async (language) => {
+        const requestJson = await fetch(`./languages/${language}.json`);
+        const texts = await requestJson.json();
+        console.log(textsToChange);
+
+        for(const textToChange of textsToChange) {
+            const section = textToChange.dataset.section;
+            const value = textToChange.dataset.value;
+
+            textToChange.innerHTML = texts[section][value];
+        }
+    }
+
+    const flagsElement = document.getElementById("flags");
+
+    flagsElement.addEventListener("click", (e) => {
+        changeLanguage(e.target.parentElement.dataset.language);
+    });
 });
