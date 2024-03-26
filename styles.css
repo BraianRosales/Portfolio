@@ -39,7 +39,7 @@ body {
     width: 100%;
     z-index: 100;
     justify-content: space-between;
-    padding: 10px 20px 10px 0px
+    padding: 10px 30px 10px 0px
 }
 
 .nav__logo {
@@ -291,7 +291,7 @@ a.greeting__buttonDownloadCv {
 /* -------------------------------------------- EXPERIENCE --------------------------------------------*/
 
 .section--experience {
-    padding-top: 60px;
+    padding-top: 90px;
 }
 
 .experience__container {
@@ -357,11 +357,11 @@ a.greeting__buttonDownloadCv {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .article__line-spacing {
-    line-height: 18px;
+    line-height: 23px;
 }
 
 li {
@@ -417,7 +417,7 @@ li {
 }
 
 .proyects__card {
-    width: 25%;
+    width: 26%;
     height: 450px;
     border-radius: 5px;
     display: flex;
@@ -427,21 +427,25 @@ li {
 }
 
 .proyects__a {
-    height: 45%;
+    height: 50%;
+    overflow: hidden;
 }
 
-.card__image {
+.card__savoryQuestBackground {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    background-image: url('assets/img/projects-img/savoryQuest.png');
+    background-size: cover;
+    background-position: center;
     border-radius: 5px 5px 0px 0px;
-}
-
-.card__image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    background-position: -27px 0px; 
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+  }
+  
+  .card__savoryQuestBackground:hover {
+    transform: scale(1.1);
+  }
 
 .card_titleAndIcon {
     display: flex;
@@ -452,7 +456,7 @@ li {
 }
 
 .card__title {
-    font-size: 20px;
+    font-size: 24px;
     color: turquoise
 }
 
@@ -479,7 +483,7 @@ li {
 }
 
 .card__article {
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     padding: 0px 10px 0px 10px;
     line-height: 22px;
@@ -490,8 +494,8 @@ li {
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-    margin-bottom: 10px;
+    gap: 8px;
+    margin-bottom: 15px;
 }
 
 .card__skillWrapper {
@@ -628,7 +632,6 @@ li {
     z-index: 999;
 }
 
-
 .flag__img {
     box-shadow: 0px 1px 5px 0px black;
     border-radius: 50%;
@@ -654,7 +657,18 @@ li {
 
 /* -------------------------------------------- RESPONSIVE Media Queries --------------------------------------------*/
 
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .flags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: fixed;
+        top: 20px;
+        left: 100px;
+        z-index: 999;
+    }
 
     #acercaDeMi::after,
     #proyectos::after,
@@ -673,7 +687,7 @@ li {
 
     .icon__menu {
         display: block;
-        font-size: 30px;
+        font-size: 35px;
         color: turquoise;
         cursor: pointer;
         position: relative;
@@ -817,6 +831,10 @@ li {
     .proyects__card {
         width: 85%;
     }
+    
+    .card__title {
+        font-size: 22px;
+    }
 
     .section--contact {
         padding-bottom: 100px;
@@ -869,42 +887,7 @@ li {
     }
 }
 
-@media screen and (min-height: 550px) and (max-height: 666px) {
-
-    #acercaDeMi::after,
-    #proyectos::after,
-    #habilidades::after {
-        height: 0px;
-    }
-
-    .section {
-        gap: 50px;
-    }
-
-    .picture {
-        width: 150px;
-        height: 150px;
-    }
-
-    .greeting__text {
-        font-size: 13px;
-    }
-
-    .article__text {
-        font-size: 13px;
-    }
-
-    /* .contact__container {
-        margin-top: 60px;
-    } */
-
-    .contact__container h2 {
-        font-size: 25px;
-    }
-
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 939px) {
 
     #acercaDeMi::after,
     #proyectos::after,
@@ -948,8 +931,6 @@ li {
         padding: 15px 5px 3px 5px;
     }
 
-
-
     .nav__name {
         width: 60px;
         height: 60px;
@@ -957,6 +938,8 @@ li {
 
     .section {
         gap: 100px;
+        height: auto;
+        padding-top: 100px;
     }
 
     .section--inicio {
@@ -1109,14 +1092,9 @@ li {
     .contact__buttonWrapper button {
         width: 40%;
     }
-
-    #fixed-icon {
-        bottom: 45px;
-        right: 26px;
-    }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 940px) and (max-width: 1460px) {
 
     #acercaDeMi::after,
     #proyectos::after,
@@ -1275,7 +1253,7 @@ li {
     }
 
     .proyects__card {
-        width: 35%;
+        width: 32%;
     }
 
     /* -----------------------------------------CONTACT------------------------------------------ */
@@ -1325,33 +1303,8 @@ li {
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1460px) {
-
-    #acercaDeMi::after,
-    #proyectos::after,
-    #habilidades::after {
-        height: 0px;
-    }
-
-    .section {
-        gap: 50px;
-    }
-
+@media screen and (min-width: 940px) and (max-width: 1540px) {
     .experience__container {
-        gap: 25px;
-    }
-
-    #habilidades {
-        width: 90%;
-    }
-
-    #fixed-icon {
-        bottom: 40px;
-        right: 25px
-    }
-
-    .nav__name {
-        width: 60px;
-        height: 60px;
+        width: 95%;
     }
 }

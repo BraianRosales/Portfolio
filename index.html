@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
   <header id="inicio" class="header">
     <nav class="nav">
       <div class="nav__logo">
@@ -92,8 +91,11 @@
       </div>
       <div class="greeting">
         <div class="greeting__container">
-          <h1 class="greeting__title" data-section="aboutMe" data-value="greeting">
-            Hola! Soy <span class="greeting__name">Braian Rosales</span>
+          <h1 class="greeting__title">
+            <span data-section="aboutMe" data-value="greeting">Hola! Soy</span>
+            <span class="greeting__name">
+              Braian Rosales
+            </span>
           </h1>
           <h3 class="greeting__subtitle" data-section="aboutMe" data-value="rol">Desarrollador Front end</h3>
           <p class="greeting__text" data-section="aboutMe" data-value="descriptionOne">
@@ -213,7 +215,7 @@
       <div class="proyects__container">
         <div class="proyects__card">
           <a class="proyects__a" href="https://savoryquest.netlify.app" target="_blank">
-            <img class="card__image" src="assets/img/projects-img/savoryQuest.png" alt="SavoryQuest-img" />
+            <div class="card__savoryQuestBackground" onmousemove="zoom(event)"></div>
           </a>
           <div class="card_titleAndIcon">
             <span class="card__title">Savory Quest</span>
@@ -237,6 +239,9 @@
             <span class="card__skillWrapper">
               <p>Angular</p>
             </span>
+            <!-- <span class="card__skillWrapper">
+              <p>Modules</p>
+            </span> -->
             <span class="card__skillWrapper">
               <p>RxJs</p>
             </span>
@@ -250,7 +255,7 @@
         </div>
         <div class="proyects__card">
           <a class="proyects__a" href="https://savoryquest.netlify.app" target="_blank">
-            <img class="card__image" src="assets/img/fondoCard.jpg" alt="" />
+            <div class="card__background"></div>
           </a>
           <div class="card_titleAndIcon">
             <h1 class="card__title"></h1>
@@ -260,7 +265,7 @@
         </div>
         <div class="proyects__card">
           <a class="proyects__a" href="https://savoryquest.netlify.app" target="_blank">
-            <img class="card__image" src="assets/img/fondoCard.jpg" alt="" />
+            <div class="card__background"></div>
           </a>
           <div class="card_titleAndIcon">
             <h1 class="card__title"></h1>
@@ -277,7 +282,7 @@
         <div class="skill__card">
           <img src="assets/svg/html5.svg" alt="HTML5Icon" />
           <div>
-            <p class="skills__iconTitle">Html 5</p>
+            <p class="skills__iconTitle">Html5</p>
             <p class="skills__iconText" data-section="skills" data-value="skillOne">Marcado Web</p>
           </div>
         </div>
@@ -390,12 +395,13 @@
         <form class="contact__form" action="https://formsubmit.co/f13127b1bab69a6a7cefef35e9509307" method="POST">
           <div class="contact__emailContainer">
             <label for="email" data-section="contact" data-value="mail">E-mail:</label>
-            <input type="text" id="email" name="email" placeholder="tucorreo@gmail.com" required autocomplete="off" />
+            <input type="text" id="mailPlaceholder" name="email" placeholder="tucorreo@gmail.com" required
+              autocomplete="off" />
           </div>
           <div class="contact__messageContainer">
-            <label for="mensaje" data-section="contact" data-value="msg">Mensaje:</label>
+            <label for="message" data-section="contact" data-value="msg">Mensaje:</label>
             <div class="contact__textareaContainer">
-              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Descripción del mensaje..."
+              <textarea id="message" name="message" rows="4" placeholder="Descripción del mensaje..."
                 required></textarea>
               <div class="contact__buttonWrapper">
                 <button type="submit" data-section="contact" data-value="sendButton">Enviar</button>

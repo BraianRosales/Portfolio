@@ -79,11 +79,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const changeLanguage = async (language) => {
         const requestJson = await fetch(`./languages/${language}.json`);
         const texts = await requestJson.json();
-        console.log(textsToChange);
-
+        
         for(const textToChange of textsToChange) {
             const section = textToChange.dataset.section;
             const value = textToChange.dataset.value;
+
+            const inputElementPlaceholder = document.getElementById("mailPlaceholder");
+            if (inputElementPlaceholder) {
+                inputElementPlaceholder.placeholder = texts[section].mailPlaceholder;
+            }
+
+            const inputElementMessage = document.getElementById("message");
+            if (inputElementMessage) {
+                inputElementMessage.placeholder = texts[section].message;
+            }
 
             textToChange.innerHTML = texts[section][value];
         }
@@ -95,3 +104,14 @@ document.addEventListener("DOMContentLoaded", function() {
         changeLanguage(e.target.parentElement.dataset.language);
     });
 });
+
+// function zoom(event) {
+//     const rect = event.target.getBoundingClientRect();
+//     const x = event.clientX - rect.left;
+//     const y = event.clientY - rect.top;
+    
+//     const scaleX = x / event.target.offsetWidth;
+//     const scaleY = y / event.target.offsetHeight;
+  
+//     event.target.style.transformOrigin = scaleX * 100 + '% ' + scaleY * 100 + '%';
+//   }

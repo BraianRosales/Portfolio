@@ -7,7 +7,7 @@
         "contact":"CONTACTO"
     },
     "aboutMe": {
-        "greeting": "Hola! Soy Braian Rosales",
+        "greeting": "Hola! Soy",
         "rol":"Desarrollador Front end",
         "descriptionOne":"Bienvenid@ a mi portafolio como desarrollador Front end. Estoy encantado de tener la oportunidad de presentarte mis proyectos y habilidades creando aplicaciones Web.",
         "descriptionTwo":"En cada proyecto en el que me involucro, mi objetivo es mantenerme actualizado, superar mis límites y adoptar las mejores prácticas en el desarrollo de software. Mi enfoque es siempre encontrar soluciones innovadoras y eficientes.",
@@ -57,9 +57,10 @@
     },
     "contact": {
         "title":"Trabajemos juntos",
-        "placeholder":"tucorreo@gmail.com",
         "mail":"E-mail",
         "msg":"Mensaje",
-        "sendButton":"Enviar"
+        "mailPlaceholder":"tucorreo@gmail.com",
+        "sendButton":"Enviar",
+        "message":"Descripción del mensaje..."
     }
 }
